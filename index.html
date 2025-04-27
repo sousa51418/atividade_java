@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividades de JavaScript</title>
+  <style>
+    .caixa {
+      margin: 5px;
+    }
+    #textoAlterar {
+      font-size: 20px;
+      color: rgb(255, 0, 0);
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Mensagem Olá Mundo</h2>
+  <button onclick="mostrarOlaMundo()">Clique aqui</button>
+
+  <h2>2. Soma de dois inteiros</h2>
+  <input type="number" id="num1" placeholder="Número 1">
+  <input type="number" id="num2" placeholder="Número 2">
+  <button onclick="somar()">Somar</button>
+  <p id="resultado"></p>
+
+  <h2>3. Alterar propriedade de um elemento por ID</h2>
+  <p id="textoAlterar">Texto Original</p>
+  <button onclick="alterarTextoCor()">Alterar Texto e Cor</button>
+
+  <h2>4. Alterar propriedade de um elemento por NAME</h2>
+  <input type="text" name="campoTexto" value="Texto padrão">
+  <button onclick="alterarTextoPorName()">Alterar Texto do Campo</button>
+
+  <h2>5. Alterar propriedade de um elemento por CLASS</h2>
+  <input type="checkbox" class="caixa"> Caixa 1
+  <input type="checkbox" class="caixa"> Caixa 2
+  <br><br>
+  <button onclick="resetarCaixas()">Resetar Seleção</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
